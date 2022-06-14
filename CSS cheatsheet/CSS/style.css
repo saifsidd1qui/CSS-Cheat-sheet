@@ -1,0 +1,72 @@
+h1{
+    color: rgb(218, 24, 24);
+}
+
+body{
+    color: black;
+    background-color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-weight: bold;
+    
+    /* Bottom code is simpler way of writing out the top code*/
+
+    font: blue bold medium Arial, Helvetica, sans=serif;
+
+    line-height: 30px
+}
+
+.container{
+    width: 80%; /* want to use percentages when working with width so that it reacts to changing page size*/
+    margin: auto; /* sets auto margin on all sides to push container to middle of page*/
+}
+.box-1{
+    background-color: #333; /*gived the box a grey colour*/
+    color: #fff; /*makes text white to contrast with dark grey box background*/
+
+    border-right: 5px red solid; /*this creates a small border on the right of the box with the size, color and style you like*/
+    border-left: 5px red solid;
+    border-top: 5px red solid;
+    border-bottom: 5px red solid;
+ 
+    padding-top: 20px; /*created padding between the top of the box and the words i.e. creating space*/
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.box-1 h1{ /*this targets the box class specifically the h1 properties*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    text-decoration: underline; /*gives text underline*/
+    text-transform: uppercase; /*makes all letters capital*/
+    letter-spacing: 0.2em;
+    word-spacing: 0.8em;
+}
+
+.box-2{
+    background-color: purple;
+    border:3px dotted #333;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.categories{
+    border: 1px #333 solid;
+    padding: 10px;
+    border-radius: 15px; /*gives rounded edges*/
+}
+
+.categories h2{
+    text-align: center; /*text is aligned to center*/
+}
+
+.categories ul{
+    padding: 0; /*ul already have default padding so setting it to 0 gets rid of any padding*/
+    list-style-type: style square; /*makes bullet points square*/
+    list-style: none; /*keeps the ul but gets rid of nullet points*/
+}
