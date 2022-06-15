@@ -19,7 +19,19 @@ body{
 .container{
     width: 80%; /* want to use percentages when working with width so that it reacts to changing page size*/
     margin: auto; /* sets auto margin on all sides to push container to middle of page*/
+    }
+ /*Classes that can be applied to everything are known as global classes*/   
+.button[type="submit"]{ /*We made a class called button thus the features in this code are applied to all buttons on the website instead of only one.*/
+    background-color: black;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    }
+
+.clr{
+    clear: both; /*clears floats*/
 }
+    
 .box-1{
     background-color: #333; /*gived the box a grey colour*/
     color: #fff; /*makes text white to contrast with dark grey box background*/
@@ -70,3 +82,41 @@ body{
     list-style-type: style square; /*makes bullet points square*/
     list-style: none; /*keeps the ul but gets rid of nullet points*/
 }
+
+.my-form .form-group{
+    padding: 15px;
+}
+
+.my-form label{ /*targetting the label elements*/
+    display: block; /*labels are in line so we changed it to a block level element */
+}
+
+.my-form input[type="text"]{ /*targetting the input elements, specifically the text ones and not buttons (i.e. the submit button*/
+    padding: 8px;
+    width: 100%; /*width is 100% of its container*/
+}
+
+.my-form input[type="textarea"]{
+    padding: 8px;
+    width: 100%; 
+}
+
+.block{ /*block makes them all on the same block*/
+    float: left; /*left aligned text*/
+    width: 33.3%;
+}
+
+#main-block{ /*id's are done using # whilst classes are done using .*/
+    float:left ;
+    width: 70%;
+    padding: 15px;
+}
+#sidebar{
+    float: right;
+    width:30%;
+    background-color: aquamarine;
+    padding:15px;
+    color: #333;
+    box-sizing: border-box; /*makes everythign fit properply*/
+}
+
